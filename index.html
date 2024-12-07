@@ -16,17 +16,148 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+         
+        background-image: url("https://wallpapers.com/images/hd/peace-in-simplicity-a-plain-aesthetic-background-tfkeo6wry42l3j34.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attatchement: fixed;
+      }
+      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+      .flip-card {
+        background-color: Ivory;
+        width: 400px;
+        height: 300px;
+        border: 4px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
 
-  </style>
-</head>
-<body>
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
- 
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+  
+      }
 
-</body>
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: ;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: Lightgrey;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2024 recap!</h1>
+    <h2>China photos 🇨🇳</h2>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=c465d1a91e&attid=0.0.3&permmsgid=msg-a:r8293445415439374895&th=1939f52efb4a2591&view=fimg&fur=ip&permmsgid=msg-a:r8293445415439374895&sz=s0-l75-ft&attbid=ANGjdJ8yJH42aa8Q-N-7ldas7J0WS_7SMGW0fmAupqAgxBS9M9upaBzhpQGm5bIkrmiFsbfZMzUgHdzFH1kfo-67LXFNDuvkZJmBxyjQknVaUSu2natUX0V6YrouTfU&disp=emb&realattid=ii_1939f4f28a99ca3c2b24&zw"
+            alt="Avatar"
+            style="width: 220px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>Panda!!</h1>
+          <p>Hes so cute ^^</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=c465d1a91e&attid=0.0.4&permmsgid=msg-a:r8293445415439374895&th=1939f52efb4a2591&view=fimg&fur=ip&permmsgid=msg-a:r8293445415439374895&sz=s0-l75-ft&attbid=ANGjdJ8zW5MKzI873fIy7caeo35Ql_0Fe4ol_o0B8llkFzfX3Z9oS5dynhh64P_2h1GvUxIQajWezdaThKzagq0Wibfjx6WXVpU1j8VInryDUNWzbrMIkRf88ZJnyio&disp=emb&realattid=ii_1939f4f8130d143886e5&zw"
+            alt="Avatar"
+            style="width: 200px; height: 300px"
+          />
+        </div>
+
+        <div class="flip-card-back">
+          <h1>Red Panda!!</h1>
+          <p>My first time ever seeing one!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=c465d1a91e&attid=0.0.5&permmsgid=msg-a:r8293445415439374895&th=1939f52efb4a2591&view=fimg&fur=ip&permmsgid=msg-a:r8293445415439374895&sz=s0-l75-ft&attbid=ANGjdJ97Rc5yDg1733bLWYuoOddtYqLAg3Vv5p0QXSeIX4knq0aGqq5EjKzVT8fVdrA3UI0OgaLoTp80zimRvEVa5Qp7OPpqlIXTK4qJQEhq498oMokLsHrpalWUIxE&disp=emb&realattid=ii_1939f527f196948198d6&zw"
+            alt="Avatar"
+            style="width: 300px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>The Temple</h1>
+          <p>It was very big!</p>
+        </div>
+      </div>
+    </div>
+   
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=c465d1a91e&attid=0.0.1&permmsgid=msg-a:r8293445415439374895&th=1939f52efb4a2591&view=fimg&fur=ip&permmsgid=msg-a:r8293445415439374895&sz=s0-l75-ft&attbid=ANGjdJ86oy5U-n1wOkHSfZN5dJL7sRRaBT4SERq-4ZqhfbUKFA2PXR_ygk3chlpombpTmC8Ca-lu9xydsWTL3OJUUEF4M1YJM-oLq_bJiwj-UFGhfCOzdlvF3MBtTQ8&disp=emb&realattid=ii_1939f4da894d2f8610d2&zw"
+            alt="Avatar"
+            style="width: 350px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>Shopping with friends!</h1>
+          <p>We also drank the lemon citrus drink thats popular in china</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://mail.google.com/mail/u/0?ui=2&ik=c465d1a91e&attid=0.6&permmsgid=msg-a:r-6640764073878328916&th=1939f598717be7a2&view=fimg&fur=ip&permmsgid=msg-a:r-6640764073878328916&sz=s0-l75-ft&attbid=ANGjdJ-6HdY2M3uG5nMkKqeH6eSRkcvYVVg2IclHKaMnXLORUm34Be9SqxAX_LvZbXK3yvu7SuYtdpTUIBCoG7kOSBHXaE3v5ubZOGK6J-T1LfIrNjyTPNOiAplI8jU&disp=emb&realattid=ii_1939f597174349a3c501&zw"
+            alt="Avatar"
+            style="width: 300px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>School lunch!!!</h1>
+          <p>The fried rice and beef was so yummy!</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
